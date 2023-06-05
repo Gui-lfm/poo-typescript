@@ -1,11 +1,10 @@
 import { EnergyType } from '../Energy';
 
 abstract class Archetype {
-  constructor(
-    private _name: string,
-    private _special: number,
-    private _cost: number,
-  ) {
+  private _cost: number;
+  private _special: number;
+  
+  constructor(private _name: string) {
     this._cost = 0;
     this._special = 0;
   }
