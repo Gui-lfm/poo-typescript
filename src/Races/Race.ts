@@ -1,6 +1,4 @@
 abstract class Race {
-  static racesInstancesCount = 0;
-
   constructor(
     private readonly _name: string, 
     private readonly _dexterity: number,
@@ -17,8 +15,8 @@ abstract class Race {
   }
 
   static createdRacesInstances():number {
-    Race.racesInstancesCount += 1;
     throw new Error('Not implemented');
+    // Race.racesInstancesCount += 1;
     // return Race.racesInstancesCount;
   }
 
